@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Enjoy Chatting!</title>
+        <link rel="icon" href="Enjoy Chatting!.png">
+        <link rel="stylesheet" href="mainpage.css">
+    </head>
+    <body>
+        <h1>Enjoy Chatting!</h1>
+        <center>
+            <div>
+                <p id="a">Let's create a chat!</p>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <input type="text" name="roomkey" id="roomKey" placeholder="Room key">
+            <br>
+            <br>
+            <br>
+            <input type="text" name="secret" id="secret" placeholder="Secret">
+            <br>
+            <br>
+            <br>
+            <br>
+            <button id="createChat">Create Chat</button>
+            <br>
+            <br>
+            <button id="signOut">Sign Out</button>
+        </center>
+    </body>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-storage.js"></script>
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyCiDABE7p3nwIRnpPeCRHwVFdPcpBiQnyQ",
+            authDomain: "enjoy-chatting-af8b8.firebaseapp.com",
+            databaseURL: "https://enjoy-chatting-af8b8-default-rtdb.firebaseio.com",
+            projectId: "enjoy-chatting-af8b8",
+            storageBucket: "enjoy-chatting-af8b8.appspot.com",
+            messagingSenderId: "306867275955",
+            appId: "1:306867275955:web:177f794ef5af4ea47208c6",
+            measurementId: "G-GRPMK9YXJC"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+    <script src="mainpage.js"></script>
+</html>
