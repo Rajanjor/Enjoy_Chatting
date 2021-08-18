@@ -8,6 +8,9 @@ body{
     text-align: center;
     background-color: #f8f6f0;
 }
+p{
+    font-size: 17px;
+}
 h1{
     font-weight: 300;
     margin: 0px;
@@ -29,12 +32,14 @@ button{
 }
 #email {
     width: 35%;
+    font-size: 20px;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
 }
 #password {
     width: 35%;
+    font-size: 20px;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
