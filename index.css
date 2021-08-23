@@ -31,14 +31,14 @@ button{
 	margin-bottom: 20px;
 }
 #email {
-    width: 35%;
+    width: 50%;
     font-size: 20px;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
 }
 #password {
-    width: 35%;
+    width: 50%;
     font-size: 20px;
     padding: 12px 20px;
     margin: 8px 0;
