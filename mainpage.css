@@ -8,8 +8,8 @@ body {
     text-align: center;
     background-color: #f8f6f0;
 }
-#a {
-    font-size: 25px;
+p {
+    font-size: 30px;
 }
 h1 {
     font-weight: 300;
@@ -39,4 +39,21 @@ input {
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
+}
+img {
+    border-radius: 50%;
+}
+#profilePhoto {
+    font-family: 'Work Sans', sans-serif;
+	font-size: 20px;
+	background-color: #279;
+	color: #fff;
+	border: 0px;
+	border-radius: 10px;
+	padding: 20px;
+	cursor: pointer;
+	margin-bottom: 20px;
+}
+#profilePhoto:hover {
+    background-color: #38a;
 }

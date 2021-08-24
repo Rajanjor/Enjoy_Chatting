@@ -1,6 +1,7 @@
-var email = document.getElementById('email');
-var password = document.getElementById('password');
+var email = document.getElementById('signInEmail');
+var password = document.getElementById('signInPassword');
 var signIn = document.getElementById('signIn');
+var back = document.getElementById('back');
 
 signIn.addEventListener("click", function(){
     firebase.auth().signInWithEmailAndPassword(email.value, password.value)
@@ -14,4 +15,8 @@ signIn.addEventListener("click", function(){
         alert(errorMessage);
         console.log(errorCode);
     });
+});
+
+back.addEventListener("click", function(){
+    window.open("index.html","_self");
 });

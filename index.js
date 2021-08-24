@@ -3,6 +3,11 @@ var password = document.getElementById('password');
 var signUp = document.getElementById('signUp');
 var alreadyauser = document.getElementById('alreadyauser');
 
+window.onload = function(){
+    email.value = "";
+    password.value = "";
+};
+
 signUp.addEventListener("click", function(){
     firebase.auth().createUserWithEmailAndPassword(email.value, password.value)
     .then((userCredential) => {
