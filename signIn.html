@@ -4,8 +4,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Enjoy Chatting!</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <link rel="icon" href="Enjoy Chatting!.png">
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="signIn.css">
     </head>
     <body>
         <h1>Enjoy Chatting!</h1>
@@ -17,11 +18,11 @@
             <br>
             <br>
             <br>
-            <input type="email" name="emailid" id="email" placeholder="Email id">
+            <input type="email" name="emailid" id="signInEmail" placeholder="Email id">
             <br>
             <br>
             <br>
-            <input type="password" name="passwordid" id="password" placeholder="Password">
+            <input type="password" name="passwordid" id="signInPassword" placeholder="Password">
             <br>
             <br>
             <br>
@@ -49,5 +50,7 @@
         firebase.initializeApp(firebaseConfig);
         firebase.analytics();
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="signIn.js"></script>
 </html>

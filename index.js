@@ -3,11 +3,18 @@ var password = document.getElementById('password');
 var signUp = document.getElementById('signUp');
 var alreadyauser = document.getElementById('alreadyauser');
 
-signUp.addEventListener("click", e => {
-    const auth = firebase.auth();
-    const promise = auth.createUserWithEmailAndPassword(email.value, password.value);
-    window.location.replace("signIn.html","_self");
-    promise.catch(e => alert(e.message));
+signUp.addEventListener("click", function(){
+    firebase.auth().createUserWithEmailAndPassword(email.value, password.value)
+    .then((userCredential) => {
+        var user = userCredential.user;
+        window.location.replace("signIn.html","_self");
+    })
+    .catch((error) => {
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        alert(errorMessage);
+        console.log(errorCode);
+    });
 });
 
 alreadyauser.addEventListener("click", function(){

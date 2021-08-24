@@ -6,7 +6,7 @@ signIn.addEventListener("click", function(){
     firebase.auth().signInWithEmailAndPassword(email.value, password.value)
     .then((userCredential) => {
         var user = userCredential.user;
-        window.open();
+        window.location.replace("mainpage.html","_self");    
     })
     .catch((error) => {
         var errorCode = error.code;
