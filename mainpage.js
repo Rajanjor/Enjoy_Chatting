@@ -1,5 +1,4 @@
 var nickname = document.getElementById('nickname');
-var avatar = document.getElementById('avatar');
 var profilePhoto = document.getElementById('profilePhoto');
 var roomKey = document.getElementById('roomKey');
 var secret = document.getElementById('secret');
@@ -7,7 +6,7 @@ var createChat = document.getElementById('createChat');
 var signOut = document.getElementById('signOut');
 
 profilePhoto.addEventListener("click", function(){
-    avatar.src = profilePhoto.value;
+    document.getElementById('avatar').src = "Enjoy Chatting!.png";
 });
 
 createChat.addEventListener("click", function(){
@@ -19,7 +18,7 @@ createChat.addEventListener("click", function(){
         localStorage.setItem("Data", xyz);
 
         var storageRef = firebase.storage().ref();
-        var imageRef = storageRef.child(nickname);
+        var imageRef = storageRef.child('image');
         var task = imageRef.put(profilePhoto);
         task.on("state_changed", (snapshot) => {
                 var progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;

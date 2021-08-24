@@ -7,6 +7,10 @@ signIn.addEventListener("click", function(){
     firebase.auth().signInWithEmailAndPassword(email.value, password.value)
     .then((userCredential) => {
         var user = userCredential.user;
+        var finish = 1;
+        const a = {done: finish};
+        const b = JSON.stringify(a);
+        localStorage.setItem("SignInDone", b);
         window.location.replace("mainpage.html","_self");    
     })
     .catch((error) => {
