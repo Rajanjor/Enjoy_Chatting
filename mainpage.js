@@ -6,7 +6,7 @@ var createChat = document.getElementById('createChat');
 var signOut = document.getElementById('signOut');
 
 profilePhoto.addEventListener("click", function(){
-    document.getElementById('avatar').src = "Enjoy Chatting!.png";
+    document.getElementById('avatar').src = profilePhoto.value;
 });
 
 createChat.addEventListener("click", function(){
